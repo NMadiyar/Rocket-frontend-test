@@ -1,0 +1,40 @@
+@import "container";
+
+.header {
+  display: flex;
+  background: #000;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 110px;
+
+  &__logo {
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    justify-content: space-between;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    background: #000000;
+    border: none;
+    font-family: 'SF UI Display';
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+}
