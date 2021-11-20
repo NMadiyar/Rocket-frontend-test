@@ -1,0 +1,31 @@
+@import "vars";
+
+.imagePage {
+
+  background: rgba(40, 36, 22, 0.01);
+  backdrop-filter: blur(8px);
+  &__block {
+    padding-top: 40px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__btn {
+    border: none;
+    background: none;
+    margin-bottom: 44px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__img {
+    background: linear-gradient(0deg, rgba(40, 36, 22, 0.08), rgba(40, 36, 22, 0.08)), #FFFFFF;
+    box-shadow: 0 4px 100px #000000;
+    border-radius: 8px;
+  }
+}

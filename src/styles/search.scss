@@ -1,0 +1,34 @@
+@import "vars";
+
+.search {
+  width: 100%;
+  background: #000000;
+  position: absolute;
+  z-index: 10;
+
+  &__clicked {
+    height: 400px;
+    color: white;
+    text-align: center;
+  }
+
+  &__input {
+    font-family: $primaryFont;
+    font-size: 72px;
+    line-height: 86px;
+    color: #FFFFFF;
+    background: #000000;
+    border: none;
+    text-align: center;
+    width: 1200px;
+    border-bottom: 0.5px solid #FFFFFF;
+  }
+
+  &__variants {
+    margin-top: 30px;
+    font-family: $primaryFont;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+}

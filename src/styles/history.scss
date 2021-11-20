@@ -1,0 +1,48 @@
+@import "vars";
+
+.history {
+  width: 100%;
+  background: #000000;
+  position: absolute;
+  z-index: 10;
+
+  &__clicked {
+    height: 400px;
+    color: white;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: $primaryFont;
+    font-size: 36px;
+    line-height: 43px;
+    color: #FFFFFF;
+    margin-top: 60px;
+    margin-bottom: 45px;
+  }
+  &__query {
+    font-family: $primaryFont;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 10px;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__btn {
+    border: none;
+    font-family: $primaryFont;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    background: none;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

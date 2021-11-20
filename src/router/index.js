@@ -14,6 +14,21 @@ const routes = [
     name: 'Favourites',
     component: () => import('../views/Favourites/Favourites.vue'),
   },
+  {
+    path: '/search',
+    name: 'Search',
+    component: () => import('../views/Search/Search.vue'),
+  },
+  {
+    path: '/history',
+    name: 'History',
+    component: () => import('../views/History/History.vue'),
+  },
+  {
+    path: '/image',
+    name: 'ImagePage',
+    component: () => import('../views/ImagePage/ImagePage.vue'),
+  },
 ];
 
 const router = new VueRouter({
