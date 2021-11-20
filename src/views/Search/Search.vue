@@ -5,8 +5,10 @@
         <input :value="searchFor" class="search__input"
                type='search' placeholder="Поиск"
         @input="updateSearchFor">
-        <div class="search__variants">
-          {{searchHistory}}
+        <div class="search__block">
+          <div class="search__variants" v-for="item in searchHistory" :key="item.id">
+            {{item}}
+          </div>
         </div>
       </form>
     </div>

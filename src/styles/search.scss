@@ -24,6 +24,12 @@
     border-bottom: 0.5px solid #FFFFFF;
   }
 
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   &__variants {
     margin-top: 30px;
     font-family: $primaryFont;
