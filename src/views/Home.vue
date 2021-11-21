@@ -3,7 +3,8 @@
     <h1 class="title">Главная страница</h1>
     <div>
       <button class="btn" @click="makeOneLine">
-        <img src="@/assets/Group11.svg" alt="oneLine">
+        <img src="@/assets/oneLineSel.svg"
+             alt="oneLine">
       </button>
       <button class="btn" @click="makeWholeLine">
         <img src="@/assets/Group10.svg" alt="wholeLine">
@@ -24,9 +25,6 @@ export default {
   name: 'Home',
   mounted() {
     this.fetchImages();
-    // console.log(this.images.user.first_name);
-    // console.log(this.images.user.instagram_username);
-    // console.log(this.images.user.profile_image.small);
   },
   data() {
     return {
@@ -46,11 +44,14 @@ export default {
       this.wholeLine = true;
     },
     fetchImages() {
-      this.$store.dispatch('fetchImages', 'random');
+      this.$store.dispatch('fetchImagesHome');
     },
     goToImage(e) {
       this.$store.commit('updateCurrentImg', e.target.currentSrc);
       this.$router.push('/image');
+    },
+    selectedLines() {
+      return '@/assets/oneLineSel.svg';
     },
   },
 };
