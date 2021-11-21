@@ -26,15 +26,15 @@
 
   &__block {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
   &__variants {
-    margin-top: 30px;
     font-family: $primaryFont;
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
+    margin: 30px 10px 10px 10px;
   }
 }

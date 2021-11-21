@@ -3,6 +3,11 @@
   <div class="container">
     <div class="imagePage__block">
       <div class="imagePage__box">
+        <div class="history__user">
+          <img  />
+          <p></p>
+          <p></p>
+        </div>
         <button class="imagePage__btn" @click="updateFavouriteImages">
           <img src="@/assets/favorites.svg" alt="favourite">
         </button>
@@ -36,6 +41,7 @@ export default {
     },
     updateFavouriteImages() {
       this.$store.commit('updateFavouriteImages', this.currentImg);
+      alert('Добавлено в избранное!');
     },
   },
 };

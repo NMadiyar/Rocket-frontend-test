@@ -1,6 +1,6 @@
 <template>
   <div style="text-align: center">
-    <h1 class="title">Главная страница</h1>
+    <h1 class="title">Избранное</h1>
     <div>
       <button class="btn" @click="makeOneLine">
         <img src="@/assets/Group11.svg" alt="oneLine">

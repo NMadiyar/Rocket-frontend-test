@@ -2,8 +2,12 @@
   <div id="app">
     <Header :is-clicked="clicked" :is-history-clicked="clickedHistory"
             @open="openSearch" @openHistory="openHistory"></Header>
-    <Search :is-clicked="clicked"></Search>
-    <History :is-clicked-history="clickedHistory"></History>
+    <Search :is-clicked="clicked"
+            @closeSearch="openSearch">
+    </Search>
+    <History :is-clicked-history="clickedHistory"
+             @closeHistory="openHistory">
+    </History>
     <router-view></router-view>
   </div>
 </template>

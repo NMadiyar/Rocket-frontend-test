@@ -29,6 +29,7 @@ export default {
   methods: {
     updateSearch(e) {
       this.$store.dispatch('fetchImages', e.target.innerText);
+      this.$emit('closeHistory');
     },
   },
 };

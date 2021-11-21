@@ -11,12 +11,16 @@ export default new Vuex.Store({
     searchFor: '',
     searchHistory: [],
     currentImg: '',
+    firstName: '',
   },
   mutations: {
     updateImages(state, response) {
       state.images = response;
     },
     updateSearchFor(state, string) {
+      state.searchFor = string;
+    },
+    cleanSearchFor(state, string) {
       state.searchFor = string;
     },
     updateSearchHistory(state, arr) {
@@ -27,6 +31,9 @@ export default new Vuex.Store({
     },
     updateFavouriteImages(state, url) {
       state.favouriteImages.push(url);
+    },
+    updateFirstName(state, firstName) {
+      state.firstName = firstName;
     },
   },
   actions: {

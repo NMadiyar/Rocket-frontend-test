@@ -33,7 +33,8 @@ export default {
     },
     updateSearchHistory(e) {
       this.$store.commit('updateSearchHistory', e.target[0].value);
-      console.log(e);
+      this.$store.commit('cleanSearchFor', e.target[0].value = '');
+      this.$emit('closeSearch');
     },
   },
 };

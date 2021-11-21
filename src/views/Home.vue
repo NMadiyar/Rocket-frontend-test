@@ -24,6 +24,9 @@ export default {
   name: 'Home',
   mounted() {
     this.fetchImages();
+    // console.log(this.images.user.first_name);
+    // console.log(this.images.user.instagram_username);
+    // console.log(this.images.user.profile_image.small);
   },
   data() {
     return {
@@ -43,7 +46,7 @@ export default {
       this.wholeLine = true;
     },
     fetchImages() {
-      this.$store.dispatch('fetchImagesHome');
+      this.$store.dispatch('fetchImages', 'random');
     },
     goToImage(e) {
       this.$store.commit('updateCurrentImg', e.target.currentSrc);
